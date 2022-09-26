@@ -49,6 +49,7 @@ $ git switch main
 $ git merge --quit
 $ git status
 $ git add .
+$ git push origin main
 
 
 ## HTML 4.01, XHTML 1.0 : HTML5는 둘 다 호환되지만
