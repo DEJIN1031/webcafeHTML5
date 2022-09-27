@@ -1,7 +1,7 @@
 
-FF. Safari, Chrome, Edge 등 환경 체크
+## FF. Safari, Chrome, Edge 등 환경 체크
 
-# Git 
+## Git 
 GMAIL : de.jin.1031@gmail.com
 
 
