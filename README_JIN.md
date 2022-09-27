@@ -59,3 +59,20 @@ $ npm install --save-dev htmlhint
 $ npm install 만 입력하면,,, 알아서 다운로드 됨.
 
 markdown ; 구글서칭해서 문서 작성규칙 살펴보기
+
+attribute: 속성 추가
+  <div class="" lang="en">
+property : css에서 갖고 있는 속성을 바꿈
+
+## 폰트
+Noto sans : 구글
+spoqa hans : 애플
+2폰트를 합쳐서 CJK : china, japan, korea
+
+
+html, body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+serif // 바탕체
+sans-serif // 고딕계열
