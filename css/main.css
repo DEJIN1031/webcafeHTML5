@@ -1,7 +1,45 @@
+/* 기본글꼴 - 웹폰트 */
 html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
-.logo{
-  margin: 0;
+/* 박스 사이징 재정의 */
+/* padding, border가 포함되어 계산 */
+body *, body *::before, body *::after {
+  box-sizing: border-box;
+}
+/* 레이아웃 */
+.header, .visual, .main, .slogan, .footer-inner {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+.header {
+  background-color: yellow;
+  height: 10vh;
+}
+/* auto */
+/* shift + alt+ 화살표아랫방향 : 소스 복제 */
+/* alt + 위아래 : 해당 소스 위치 변경 */
+/* ctrl + shift + K : 해당 커서에서 소스 삭제 */
+/* 헤더 */
+.visual {
+  background-color: orange;
+  height: 10vh;
+}
+/* 헤더 */
+.main {
+  background-color: blue;
+  height: 60vh;
+}
+/* 헤더 */
+.slogan {
+  background-color: aqua;
+  height: 10vh;
+}
+
+.footer{
+  background-color: purple;
+  height: 10vh;
 }

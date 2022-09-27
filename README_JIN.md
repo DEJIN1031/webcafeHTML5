@@ -76,3 +76,6 @@ html, body {
 
 serif // 바탕체
 sans-serif // 고딕계열
+
+
+min-height만 설정, 레이아웃 설계시 높이값은 고정으로 주지 않는다
