@@ -66,16 +66,18 @@ git log --oneline
   - normal flow를 벗어나서 화면에 떠있는 형태로 배치
   - float 요소의 부모에게 display: flow-root를 지정해서 float 개체의 높이를 부모가 읽어들일 수 있도록 할 수 있음.
   - overflow: hidden; 또는 clear: both 를 활용하여 float 이슈를 해결할 수 있음
-  ```css
+
+ ```css
 .clearfix::after {
   content:"";
   clear: both;
 }
-  ```
+```
 
 ## Emmet 단축키 설정
 - 설정 -> 바로가기 키 -> emmet 약어로 래핑에 단축키 등록 (Ctrl + Alt + W)
 - 설정 -> 바로가기 키 -> emmet 수식 평가 (Ctrl + Alt + M)
+
 ```bash
 ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
 ```
