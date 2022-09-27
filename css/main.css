@@ -2,7 +2,15 @@
 html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-
+body {
+  color: #000;
+  background-color: #ccc;
+}
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
 /* 박스 사이징 재정의 */
 /* padding, border가 포함되어 계산 */
 body *, body *::before, body *::after {
@@ -16,9 +24,47 @@ body *, body *::before, body *::after {
 
 /* 헤더 */
 .header {
-  background-color: yellow;
-  height: 10vh;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  height: 120px;
+  border-radius: 0 0 15px 15px;
+  /* height: 10vh; */
 }
+/* 로고 */
+.logo {
+  margin: 0;
+  font-size: 1em;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+.logo a {
+  display: block;
+}
+.logo img {
+  vertical-align: top;
+}
+
+/* 멤버 서비스 링크 */
+.member-service {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: right;
+  transform: translateX(10px);
+}
+.member-service li {
+  display: inline-block;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+/* li, a에 padding 나눠서 여백처리 : 포커스 링이 잘리지 않는다 */
+.member-service a {
+  display: inline-block;
+  padding: 6px 10px;
+}
+
 /* auto */
 /* shift + alt+ 화살표아랫방향 : 소스 복제 */
 /* alt + 위아래 : 해당 소스 위치 변경 */
