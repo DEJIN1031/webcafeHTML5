@@ -54,28 +54,44 @@ $ git push origin main
 
 ## HTML 4.01, XHTML 1.0 : HTML5는 둘 다 호환되지만
 HTML Hint 
+- markdown : 구글서칭해서 문서 작성규칙 살펴보기
 
+```bash
 $ npm install --save-dev htmlhint
 $ npm install 만 입력하면,,, 알아서 다운로드 됨.
+```
 
-markdown ; 구글서칭해서 문서 작성규칙 살펴보기
 
 attribute: 속성 추가
   <div class="" lang="en">
 property : css에서 갖고 있는 속성을 바꿈
 
 ## 폰트
-Noto sans : 구글
-spoqa hans : 애플
-2폰트를 합쳐서 CJK : china, japan, korea
+- Noto sans : 구글
+- spoqa hans : 애플
+- 2 폰트를 합쳐서 CJK : china, japan, korea
+- serif 바탕체 /sans-serif 고딕계열
 
-
+```bash
 html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+```
 
-serif // 바탕체
-sans-serif // 고딕계열
 
 
 min-height만 설정, 레이아웃 설계시 높이값은 고정으로 주지 않는다
+
+# 논리적인 순서
+- viwe와 상관없이 논리적인 순서로 배치(설계)
+
+# aria
+- aria-label="true"
+- aria-hidden="true"
+**
+## 음성명령에 대한 생각을 하고, alt를 넣어야 함
+## 레이블에도 순위가 있다.
+
+
+ul.memver-service>li*>a[href="/"]
+ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
