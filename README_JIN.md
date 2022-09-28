@@ -97,3 +97,9 @@ ul.memver-service>li*>a[href="/"]
 ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
 
 ## BFC(block Formatting context)
+
+## WCAG
+- 인식의 용이성 alt
+- 운용의 용이성 키보드
+- 이해의 용이성 제목, 기본언어
+- 견고성 문법준수
