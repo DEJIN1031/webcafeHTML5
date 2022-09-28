@@ -151,6 +151,7 @@ body *, body *::before, body *::after {
 .is-active .sub-menu {
   display: block;
 }
+
 .sub-menu {
   margin: 0;
   padding-left: 0;
@@ -196,11 +197,13 @@ body *, body *::before, body *::after {
 .menu-accessibility, .menu-qna, .menu-archive {
   right: 0;
 }
+
 /* auto */
 /* shift + alt+ 화살표아랫방향 : 소스 복제 */
 /* alt + 위아래 : 해당 소스 위치 변경 */
 /* ctrl + shift + K : 해당 커서에서 소스 삭제 */
-/* 바쥬얼 */
+
+/* 비쥬얼 */
 @keyframes moveEffect {
   0% {
     font-size: 12px;
@@ -254,7 +257,7 @@ body *, body *::before, body *::after {
   display: inline-block;
 }
 
-/* 헤더 */
+
 /* flex를 활용한 메인 콘텐츠 배치 */
 /* .main {
   background-color: blue;
@@ -286,7 +289,6 @@ body *, body *::before, body *::after {
 }
 
 .group1 {
-  background-color: pink;
   width: 250px;
 }
 .group2 {
@@ -296,6 +298,82 @@ body *, body *::before, body *::after {
 .group3 {
   background-color: salmon;
   width: 190px;
+}
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top,  #ffa75b, #ff6026);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 10px;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  color: #ff0;
+  margin: 0 0 10px 10px;
+}
+
+.login-form {
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #aaa;
+}
+
+.login-form div {
+  margin-bottom: 6px;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  width: 95px;
+  height: 22px;
+  padding: 1px 1px 1px 8px;
+}
+
+.button-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8852e;
+  background-color: #ed552f;
+  color: #fff;
+  padding: 0;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.sign {
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign a {
+  padding: 6px 0;
+  font-size: 1.3rem;
+}
+
+.sign .icon-right-open::before{
+  color: #dd422a;
 }
 
 /* .clearfix {
