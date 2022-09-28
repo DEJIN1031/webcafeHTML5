@@ -16,8 +16,7 @@ body {
   background-color: #ccc;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden {
-  background-color: red;
+.a11y-hidden, legend {
   /* display: none; DOM에 안 보일 뿐, 적절한 예시는 아니다 */
   position: absolute;
   /* top: -9999px; 좌표가 위로 올라가기 때문에, 안 좋은 사례 */
@@ -289,7 +288,6 @@ body *, body *::before, body *::after {
 .group1 {
   background-color: pink;
   width: 250px;
-  float: right;
 }
 .group2 {
   background-color: lime;
