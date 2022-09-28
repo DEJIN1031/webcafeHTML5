@@ -1,10 +1,29 @@
+@import url(./fonts.css);
+@import url(./fontello.css);
 /* 기본글꼴 - 웹폰트 */
 html, body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+html {
+  font-size: 10px; /*rem단위 계산을 위해 */
+}
 body {
+  font-size: 1.4rem;
   color: #000;
   background-color: #ccc;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden {
+  background-color: red;
+  /* display: none; DOM에 안 보일 뿐, 적절한 예시는 아니다 */
+  position: absolute;
+  /* top: -9999px; 좌표가 위로 올라가기 때문에, 안 좋은 사례 */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(1px, 1px, 1px, 1px); /*for legacy browsers*/
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 /* 링크 스타일 */
 a {
@@ -48,7 +67,6 @@ body *, body *::before, body *::after {
   background-color: #fff;
   position: relative;
   padding: 0 30px;
-  height: 120px;
   border-radius: 0 0 15px 15px;
   /* height: 10vh; */
 }
@@ -57,7 +75,7 @@ body *, body *::before, body *::after {
   margin: 0;
   font-size: 1em;
   position: absolute;
-  top: 45px;
+  top: 43px;
   left: 60px;
 }
 .logo a {
@@ -86,11 +104,101 @@ body *, body *::before, body *::after {
   padding: 6px 10px;
 }
 
+/* 메인 메뉴 */
+.navigation {
+  padding-bottom: 35px;
+}
+.menu {
+  cursor: pointer;
+  border-top: 2px solid #000;
+  height: 47px;
+  margin: 0;
+  padding-left: 230px;
+  list-style: none;
+  background: #ff6026 linear-gradient(to bottom, #ffa75b 0%,#ff6026 30%,#ff6026 70%,#ffa75b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  border-radius: 0 0 5px 5px;
+}
+.menu-item {
+  position: relative;
+  float: left;
+  border-left: 2px solid #fff;
+}
+
+.is-active .menu-button {
+  color: #ff0;
+}
+
+.is-active .menu-button::after {
+  content: "";
+  display: block;
+  background: #000;
+  height: 2px;
+}
+
+.menu-button {
+  background: transparent;
+  border: 0;
+  padding: 0 23px;
+  line-height: 45px;
+  font-weight: 700;
+  color:#fff;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+}
+
+.is-active .sub-menu {
+  display: block;
+}
+.sub-menu {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  position: absolute;
+  display: none;
+  white-space: nowrap; /* 줄바꿈 금지*/
+}
+
+.sub-menu li {
+  display: inline-block;
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+.sub-menu a::before {
+  content: "\f192";
+  font-family: 'fontello';
+  font-weight: normal;
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+}
+
+.sub-menu a:focus {
+  outline: none;
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+  color: #f00;
+}
+
+.sub-menu a:hover::before, .sub-menu a:focus::before {
+  content: "\e800";
+}
+
+.menu-html, .menu-css, .menu-standards {
+  left: 0;
+} 
+.menu-accessibility, .menu-qna, .menu-archive {
+  right: 0;
+}
 /* auto */
 /* shift + alt+ 화살표아랫방향 : 소스 복제 */
 /* alt + 위아래 : 해당 소스 위치 변경 */
 /* ctrl + shift + K : 해당 커서에서 소스 삭제 */
-/* 헤더 */
+/* 바쥬얼 */
 .visual {
   background-color: orange;
   height: 10vh;
