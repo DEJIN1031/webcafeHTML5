@@ -103,3 +103,8 @@ ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
 - 운용의 용이성 키보드
 - 이해의 용이성 제목, 기본언어
 - 견고성 문법준수
+
+
+LCP
+FID (first input delay)
+CLS ( layout shift)
