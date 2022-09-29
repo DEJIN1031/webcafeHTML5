@@ -92,19 +92,21 @@ min-height만 설정, 레이아웃 설계시 높이값은 고정으로 주지 �
 ## 음성명령에 대한 생각을 하고, alt를 넣어야 함
 ## 레이블에도 순위가 있다.
 
-
+```css
 ul.memver-service>li*>a[href="/"]
 ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
+```
 
 ## BFC(block Formatting context)
 
 ## WCAG
-- 인식의 용이성 alt
-- 운용의 용이성 키보드
-- 이해의 용이성 제목, 기본언어
-- 견고성 문법준수
+- 인식의 용이성 : alt
+- 운용의 용이성 : 키보드
+- 이해의 용이성 : 제목, 기본언어
+- 견고성 : 문법준수
 
-
-LCP
-FID (first input delay)
-CLS ( layout shift)
+## Core Web Vitals
+- [WEB 바이탈](https://web.dev/i18n/ko/vitals/)
+- Largest Contentful Paint(최대 콘텐츠풀 페인트, LCP): 
+- First Input Delay(최초 입력 지연, FID)
+- Cumulative Layout Shift(누적 레이아웃 시프트, CLS)

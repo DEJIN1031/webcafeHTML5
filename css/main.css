@@ -257,7 +257,6 @@ body *, body *::before, body *::after {
   display: inline-block;
 }
 
-
 /* flex를 활용한 메인 콘텐츠 배치 */
 /* .main {
   background-color: blue;
@@ -379,7 +378,36 @@ body *, body *::before, body *::after {
 /* .clearfix {
   clear: both;
 } */
-/* 헤더 */
+
+/* 유효성 검사 배너 */
+.validation {
+  margin-top: 25px;
+}
+
+.validation-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.validation-list li {
+  margin-top: 10px;
+}
+
+.validation-list a {
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 8px 20px 8px 45px;
+  background: url(./images/validation_icon.png) no-repeat 20px 50%, 
+  #ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.validation-list a:hover, .validation-list a:focus {
+  color: #f00;
+}
+
+/* 슬로건 */
 .slogan {
   background-color: aqua;
   height: 10vh;
