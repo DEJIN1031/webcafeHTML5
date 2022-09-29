@@ -407,6 +407,62 @@ body *, body *::before, body *::after {
   color: #f00;
 }
 
+/* 웹 관련 용어 */
+.term {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.term-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.term-list {
+  margin: 10px 0 0 0;
+}
+
+.term-list dd {
+  margin-left: 0;
+}
+
+.term-list-inner {
+  display: flow-root;
+  margin-top: 10px;
+}
+
+.term-list-subject {
+  color: #296897;
+  font-weight: 500;
+  width: 140px;
+  float: right;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: top;
+}
+
+.term-list-brief {
+  width: 140px;
+  float: right;
+  margin-top: 5px;
+}
+
+.reverse .term-list-subject, .reverse .term-list-brief {
+  float: left;
+}
+
+.reverse .term-list-thumbnail {
+  float: right;
+}
+
 /* 슬로건 */
 .slogan {
   background-color: aqua;
