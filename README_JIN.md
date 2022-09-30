@@ -110,3 +110,7 @@ ul.member-service>li*>span[aria-hidden="true"]{:}+a[href="/"]
 - Largest Contentful Paint(최대 콘텐츠풀 페인트, LCP): 
 - First Input Delay(최초 입력 지연, FID)
 - Cumulative Layout Shift(누적 레이아웃 시프트, CLS)
+
+## CSS Sprite 기법
+- 한장의 이미지에 여러 아이콘을 모아둠
+- 성능이슈로 인해 사용하는 기법
