@@ -80,8 +80,8 @@ body *, body *::before, body *::after {
   padding: 10px;
 }
 
-.spacing-md{
-  padding: 15px;
+.gap-top-md {
+  margin-top: 20px;
 }
 
 .accent-color {
