@@ -331,7 +331,6 @@ body *, body *::before, body *::after {
   width: 380px;
 }
 .group3 {
-  background-color: salmon;
   width: 190px;
 }
 /* 로그인 */
@@ -790,14 +789,98 @@ body *, body *::before, body *::after {
   padding: 0 15px;
 }
 
+/* 인기 사이트 */
+.favorite{
+  position: relative;
+}
 
+.favorite-list{
+  margin-top: 10px;
+}
 
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 8px;
+  position: relative;
+}
 
+.favorite-list li::before{
+  display: inline-block;
+  content: counter(number);
+  width: 16px;
+  background: #aaa;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.up, .stop, .down{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 11px;
+  height: 9px;
+  margin-top: -5px;
+  background: url(./images/rank.png) no-repeat;
+}
+
+.stop{
+  background-position: 0 50%;
+}
+
+.down{
+  background-position: 0 100%;
+}
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
 
 /* 슬로건 */
-.slogan {
-  background-color: aqua;
-  height: 10vh;
+.slogan{
+  position: relative;
+  padding: 15px 80px 15px 180px;
+}
+
+.slogan-title{
+  width: 110px;
+  height: 83px;
+  position: absolute;
+  left: 35px;
+  bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-title::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/coffee.png) no-repeat;
+}
+
+.slogan-content{
+  color: #a09784;
+  margin: 0;
+}
+
+.slogan-content q::before{
+  font-size: 3rem;
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+.slogan-content q::after{
+  content: "";
 }
 
 .footer{
