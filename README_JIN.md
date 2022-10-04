@@ -25,7 +25,7 @@ WCAG관점에서 (웹접근성)지키기
 
 html5 living standard /업데이트
 
-## WAR-ARIA(accebssibility Rich ...)
+## WAI-ARIA(accebssibility Rich ...)
 role(역할) 추가.
 role="banner"
 role="main"
